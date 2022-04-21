@@ -181,21 +181,21 @@ footer p{
     line-height: 17px;
     color: #FFFFFF;
 }
-
+/* 모달 */
 .modal{
+    padding-top: 76px;
+    padding-bottom: 68px;
     display: none;
     position: relative;
     top: -500px;
     margin: 0 auto;
     width: 800px;
-    height: 800px;
     background: #FFFFFF;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     border-radius: 30px;
 }
 
 .modal_header{
-    padding-top: 76px;
     font-family: 'OTEnjoystoriesBA';
     color: #5B2386;
     font-style: normal;
@@ -203,6 +203,9 @@ footer p{
     font-size: 96px;
     line-height: 106px;
     box-sizing: border-box;
+}
+.modal h2::after{
+    content: '♥♥♥';
 }
 
 .modal_header p{
@@ -212,11 +215,155 @@ footer p{
     line-height: 40px;
 }
 
-.modal_header img{
+.modal_header p::after{
+    content: url(../img/licat.png);
+    display: block;
     width: 433px;
-
+    margin: 20px auto 74px;
+    
 }
 
 .modal_header .button{
     width: 508px;
+}
+
+@media screen and (max-width:360px) {
+    .title{
+        margin-top: 65px;
+        height: 106px;
+        box-sizing: border-box;
+        background-size: 106px;
+    
+    }
+    
+    .title img{
+        margin-top: 25px;
+        width: 267px;
+    }
+
+    .quote{
+        font-size: 22px;
+        line-height: 24px;
+        margin: 40px 0 62px;
+    }
+
+    .explan{
+        background-size: 302px auto;
+        background-position: center 40%;
+    }
+
+    .explan_text{
+        font-size: 14px;
+        width: 290px;
+        line-height: 25px;
+    }
+    
+
+    .explan strong{
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .input_hour{
+        margin-top: 54.5px;
+        margin-bottom: 41.5px;
+        font-size: 14px;
+        line-height: 37px;
+        color: white;
+        text-align: center;
+        padding: 0 24px;
+    }
+
+    .input_hour input{
+        margin: 8.5px 4px;
+        width: 156px;
+        padding:12px 0 11px;
+        font-size: 14px;
+    }
+
+    .howmany{
+        width: 241px;
+        border-radius: 13px;
+        padding: 19px 36px 17px;
+        color: #5B2386;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .click{
+        width: 43px;
+        margin-left: 4px;
+        vertical-align: -45px
+    }
+
+    .result{
+        margin-top: 56.5px;
+        margin-bottom: 55px;
+        line-height: 39px;
+        font-size: 14px;
+    }
+
+    .result strong{
+        margin: 0 8px;
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .gotrain{
+        width: 186px;
+        margin-right: 13px;
+        font-size: 14px;
+        padding: 13.5px 0 12.5px;
+    }
+
+    .share{
+        width: 92px;
+        background-color: white;
+        font-size: 14px;
+        padding: 13.5px 0 12.5px;
+    }
+
+    .logo{
+        width: 91px;
+        margin-top: 83px;
+    }
+
+    footer p{
+        margin-top: 17px;
+        margin-bottom: 32px;
+        font-size: 9px;
+        line-height: 13px;
+    }
+
+    /* 모달 */
+    .modal{
+        padding: 40px 0;
+        width: 330px;
+    }
+
+    .modal_header{
+        font-size: 64px;
+        line-height: 70px;
+    }
+    .modal h2::after{
+        content: '';
+    }
+
+    .modal_header p::after{
+        content: '';
+        width: 0px;
+        margin: 0;
+        
+    }
+
+    #close{
+        margin-top: 246px;
+        width: 241px;
+        border-radius: 13px;
+        padding: 23px 49px 21px;
+        font-size: 14px;
+        line-height: 14px;
+        box-sizing: border-box;
+    }
+
 }

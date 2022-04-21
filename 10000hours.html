@@ -22,9 +22,9 @@
 
         <div class="input_hour">
             <p>나는<input type="text" placeholder="예)프로그래밍">전문가가 될 것이다.</p>
-            <p>그래서 앞으로 매일 하루에<input type="text" placeholder="예)5시간">시간씩 훈련할 것이다.</p>
+            <p>그래서 앞으로 매일 하루에<input type="text" placeholder="예)5시간" class="hour">시간씩 훈련할 것이다.</p>
         </div>
-        <button type="submit" class="button">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
+        <button type="submit" class="button howmany">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
         <img class="click" src="./img/click.png" alt="">
         <div class="result">
             <p>당신은 <strong id="job">프로그래밍</strong> 전문가가 되기 위해서</p>
@@ -33,20 +33,20 @@
             <button type="button" class="button gotrain" id="gotrain" onclick="gomodal();">훈련하러 가기 GO!GO!</button>
             <button type="button" class="button share">공유하기</button>
 
-        <section class="modal" id="modal">
-            <header class="modal_header">
-                <h2>화이팅!!♥♥♥</h2>
-                <p>당신의 꿈을 응원합니다!</p>
-            </header>
-            <img src="./img/licat.png" alt="응원하는라이캣">
-            <button class="button modalbtn" id="close" onclick="gomodal();">종료하고 진짜 훈련하러 가기 GO!GO!</button>
-        </section>
+    <section class="modal" id="modal">
+        <header class="modal_header">
+            <h2>화이팅!!</h2>
+            <p>당신의 꿈을 응원합니다!</p>
+        </header>
+        <!-- <img src="./img/licat.png" alt="응원하는라이캣"> -->
+        <button class="button modalbtn" id="close" onclick="gomodal();">종료하고 진짜 훈련하러 가기 GO!GO!</button>
+    </section>
 
     </main>
     <footer>
         <img class="logo" src="./img/logo.png" alt="weniv">
         <p>
-            ※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다. <br> 수정 및 재배포, 무단 동ㅇ 시 법적인 문제가 발생할 수 있습니다.
+            ※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다. <br> 수정 및 재배포, 무단 동용 시 법적인 문제가 발생할 수 있습니다.
         </p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
