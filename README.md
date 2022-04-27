@@ -18,9 +18,10 @@
 <summary><b>pc 버전</b></summary>
 
 ![image](https://user-images.githubusercontent.com/54096506/165584745-ccec2392-8197-4968-a704-5c4620113d80.png)
+
 jQury를 이용하여 버튼클릭시 밑에 페이지가 보이도록 설정
 
-![image](https://user-images.githubusercontent.com/54096506/165587361-284274d3-83a0-4ad7-a3e0-1ff6a360eaeb.png)
+![image](https://user-images.githubusercontent.com/54096506/165588187-a93db064-a121-4fcd-b1d8-7ca7e16efbd2.png)
 
 jQury를 이용하여 훈련하러가기 버튼을 누르면 라이캣 모달창 구현
 
@@ -34,7 +35,7 @@ jQury를 이용하여 훈련하러가기 버튼을 누르면 라이캣 모달창
 
 메인 페이지
 
-![image](https://user-images.githubusercontent.com/54096506/165585202-acc9bc61-017e-408d-9f16-a8fe0b14824b.png)
+![image](https://user-images.githubusercontent.com/54096506/165587361-284274d3-83a0-4ad7-a3e0-1ff6a360eaeb.png)
 
 훈련하러 가기 눌렀을 때 뜨는 모달창
 
