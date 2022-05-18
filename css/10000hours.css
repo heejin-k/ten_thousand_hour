@@ -26,21 +26,22 @@
     font-style: normal;
     font-weight: 400;
     src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
-    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
-    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+        url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+        url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
 }
 
 /* design */
 
-body{
-    background-color:  #5B2386;
-    text-align: center;
-}
-header{
+body {
+    background-color: #5B2386;
     text-align: center;
 }
 
-.title{
+header {
+    text-align: center;
+}
+
+.title {
     margin-top: 120px;
     background-image: url(../img/clock.png);
     background-repeat: no-repeat;
@@ -49,16 +50,16 @@ header{
     width: 100%;
     height: 265px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 
 }
 
-.title img{
+.title img {
     margin-top: 74px;
     width: 564px;
 }
 
-.quote{
+.quote {
     font-family: 'OTEnjoystoriesBA';
     font-style: normal;
     font-weight: 700;
@@ -68,7 +69,7 @@ header{
     margin: 46px 0 78px;
 }
 
-.explan{
+.explan {
     background-image: url(../img/quotes.png);
     background-size: 493px auto;
     background-repeat: no-repeat;
@@ -76,7 +77,7 @@ header{
     text-align: center;
 }
 
-.explan_text{
+.explan_text {
     display: inline-block;
     font-family: 'GmarketSansMedium';
     font-style: normal;
@@ -88,13 +89,13 @@ header{
     text-align: center;
 }
 
-.explan strong{
+.explan strong {
     font-weight: 700;
     font-size: 24px;
     line-height: 24px;
 }
 
-.input_hour{
+.input_hour {
     margin-top: 98.5px;
     margin-bottom: 101.5px;
     font-family: 'GmarketSansMedium';
@@ -106,30 +107,35 @@ header{
     text-align: center;
 }
 
-.input_hour input{
+.input_hour input {
     margin: 13.5px 17px;
     width: 228px;
-    padding:17px 0 16px;
+    padding: 17px 0 16px;
     border-radius: 7px;
-    color: #BABCBE;
+    color: #676767;
     text-align: center;
     font-family: 'GmarketSansMedium';
     font-size: 24px;
     border: transparent;
 }
 
-.button{
+.input_hour input::placeholder {
+    color: #BABCBE;
+    ;
+}
+
+.button {
     width: 565px;
     background: #FCEE21;
     -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border: none;
     border-radius: 56px;
     padding: 21px 0px;
     color: #5B2386;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -138,17 +144,18 @@ header{
     cursor: pointer;
 }
 
-.click{
+.click {
     margin-left: 7px;
     vertical-align: -50px
 }
 
-.wrap_result{
+
+.wrap-result {
     display: none;
 }
 
-.result{
-    margin-top: 171px;
+.result {
+    margin-top: 127px;
     margin-bottom: 127px;
     line-height: 89px;
     font-family: 'GmarketSansMedium';
@@ -157,7 +164,7 @@ header{
     color: #FFFFFF;
 }
 
-.result strong{
+.result strong {
     margin: 12px;
     font-weight: 700;
     font-size: 72px;
@@ -165,22 +172,22 @@ header{
     font-family: 'GmarketSansMedium';
 }
 
-.gotrain{
+.gotrain {
     width: 356px;
     margin-right: 16px;
 }
 
-.share{
+.share {
     width: 191px;
     background-color: white;
 }
 
-.logo{
+.logo {
     width: 125px;
     margin-top: 130px;
 }
 
-footer p{
+footer p {
     margin-top: 20px;
     margin-bottom: 70px;
     font-family: 'Noto Sans KR';
@@ -190,26 +197,27 @@ footer p{
     line-height: 17px;
     color: #FFFFFF;
 }
+
 /* 모달 */
-.modal{
+.modal {
     padding-top: 76px;
     padding-bottom: 68px;
     display: none;
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform:translate(-50%);
-        -ms-transform:translate(-50%);
-            transform:translate(-50%);
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
     margin: 0 auto;
     width: 800px;
     background: #FFFFFF;
     -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     border-radius: 30px;
 }
 
-.modal_header{
+.modal_header {
     font-family: 'OTEnjoystoriesBA';
     color: #5B2386;
     font-style: normal;
@@ -217,70 +225,76 @@ footer p{
     font-size: 96px;
     line-height: 106px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
-.modal h2::after{
+
+.modal h2::after {
     content: '♥♥♥';
 }
 
-.modal_header p{
+.modal_header p {
     color: #5B2386;
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
 }
 
-.modal_header p::after{
+.modal_header p::after {
     content: url(../img/licat.png);
     display: block;
     width: 433px;
     margin: 20px auto 74px;
-    
+
 }
 
-.modal_header .button{
+.modal_header .button {
     width: 508px;
 }
 
+/* js class */
+.show {
+    display: block;
+}
+
 @media screen and (max-width:360px) {
-    .title{
+    .title {
         margin-top: 65px;
         height: 106px;
         -webkit-box-sizing: border-box;
-                box-sizing: border-box;
+        box-sizing: border-box;
         background-size: 106px;
-    
+
     }
-    
-    .title img{
+
+    .title img {
         margin-top: 25px;
         width: 267px;
     }
 
-    .quote{
+    .quote {
         font-size: 22px;
         line-height: 24px;
         margin: 40px 0 62px;
     }
 
-    .explan{
+    .explan {
         background-size: 302px auto;
         background-position: center 40%;
     }
 
-    .explan_text{
+    .explan_text {
         font-size: 14px;
         width: 290px;
         line-height: 25px;
     }
-    
 
-    .explan strong{
+
+    .explan strong {
         font-size: 15px;
         line-height: 15px;
     }
 
-    .input_hour{
+    .input_hour {
         margin-top: 54.5px;
         margin-bottom: 41.5px;
         font-size: 14px;
@@ -290,14 +304,14 @@ footer p{
         padding: 0 24px;
     }
 
-    .input_hour input{
+    .input_hour input {
         margin: 8.5px 4px;
         width: 156px;
-        padding:12px 0 11px;
+        padding: 12px 0 11px;
         font-size: 14px;
     }
 
-    .howmany{
+    .howmany {
         width: 241px;
         border-radius: 13px;
         padding: 19px 36px 17px;
@@ -306,45 +320,45 @@ footer p{
         line-height: 14px;
     }
 
-    .click{
+    .click {
         width: 43px;
         margin-left: 4px;
         vertical-align: -45px
     }
 
-    .result{
+    .result {
         margin-top: 56.5px;
         margin-bottom: 55px;
         line-height: 39px;
         font-size: 14px;
     }
 
-    .result strong{
+    .result strong {
         margin: 0 8px;
         font-size: 24px;
         line-height: 24px;
     }
 
-    .gotrain{
+    .gotrain {
         width: 186px;
         margin-right: 13px;
         font-size: 14px;
         padding: 13.5px 0 12.5px;
     }
 
-    .share{
+    .share {
         width: 92px;
         background-color: white;
         font-size: 14px;
         padding: 13.5px 0 12.5px;
     }
 
-    .logo{
+    .logo {
         width: 91px;
         margin-top: 83px;
     }
 
-    footer p{
+    footer p {
         margin-top: 17px;
         margin-bottom: 32px;
         font-size: 9px;
@@ -352,27 +366,28 @@ footer p{
     }
 
     /* 모달 */
-    .modal{
+    .modal {
         padding: 40px 0;
         width: 330px;
     }
 
-    .modal_header{
+    .modal_header {
         font-size: 64px;
         line-height: 70px;
     }
-    .modal h2::after{
+
+    .modal h2::after {
         content: '';
     }
 
-    .modal_header p::after{
+    .modal_header p::after {
         content: '';
         width: 0px;
         margin: 0;
-        
+
     }
 
-    #close{
+    .modalbtn {
         margin-top: 246px;
         width: 241px;
         border-radius: 13px;
@@ -380,9 +395,10 @@ footer p{
         font-size: 14px;
         line-height: 14px;
         -webkit-box-sizing: border-box;
-                box-sizing: border-box;
+        box-sizing: border-box;
     }
-    #close span{
+
+    .modalbtn span {
         display: block;
     }
 
