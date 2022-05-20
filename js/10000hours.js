@@ -25,3 +25,19 @@ modalbtn.addEventListener('click', () => {
     modal.classList.toggle('show');
 })
 
+// 수정한 코드
+let jobname = document.input_form.inputjob.value;
+let dayhour = document.input_form.inputhour.value;
+// input 안에 job, hour이라는 이름의 value 불러옴
+
+if (jobname == "" || dayhour == "") {
+  alert(" 입력되지 않은 값이 있습니다. ");
+  if (jobname == "") {
+    document.input_form.inputjob.focus();
+    //focus가 jobname으로 옮겨짐
+  } else if (dayhour == "") {
+    document.input_form.inputhour.focus();
+    //focus가 dayhour으로 옮겨짐
+  }
+}
+
